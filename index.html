@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Tense Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Past Tense Quiz</h1>
+            <p>Complete the quiz by answering questions about past tense verbs</p>
+        </header>
+
+        <div class="quiz-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            
+            <div class="question-counter">
+                Question <span id="current-question">1</span> of <span id="total-questions">20</span>
+            </div>
+
+            <div class="question-card" id="question-card">
+                <div class="question-image" id="question-image">
+                    <!-- Visual representation will be added here -->
+                </div>
+                <div class="question-text" id="question-text">
+                    <!-- Question will be displayed here -->
+                </div>
+                <div class="options" id="options">
+                    <!-- Options for multiple choice or input for fill-in will be added here -->
+                </div>
+                <button class="next-btn" id="next-btn" onclick="nextQuestion()">Next Question</button>
+            </div>
+
+            <div class="results" id="results" style="display: none;">
+                <h2>Quiz Complete!</h2>
+                <p>Your Score: <span id="final-score">0</span>/20</p>
+                <div class="score-breakdown">
+                    <p>Multiple Choice: <span id="mc-score">0</span>/10</p>
+                    <p>Fill-in-the-blank: <span id="fill-score">0</span>/10</p>
+                </div>
+                <button class="restart-btn" onclick="restartQuiz()">Take Quiz Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
